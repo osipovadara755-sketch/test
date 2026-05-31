@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main/style.css">
+    <link rel="stylesheet" type="text/css" href="adaptive.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <title>Главная страница</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-wrapper">
+                <a href="index.html"><img src="main/image/1.png" alt="Logo" class="logo-image"></a>
+            </div>
+
+            <nav class="navigation">
+                <ol>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                    <li><a href="index.html">О нас</a></li>
+                </ol>
+            </nav>
+
+            <button class="burger-btn" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-btn" id="closeBtn">✕</button>
+            <nav>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                    <li><a href="index.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <section class="hero">
+            <div class="hero-header">
+                <img src="main/image/1.png" alt="Logo" class="hero-logo">
+                <h1 class="hero-title">Флоразис</h1>
+            </div>
+            <div class="hero-image-wrapper">
+                 <img src="main/image/2.jpg" alt="Главное фото" class="hero-image">
+                 <div class="hero-overlay">
+                     <div class="hero-subtitle">
+                        <span>ВДОХНОВЕНИЕ</span>
+                         <span>В КАЖДОМ ЛЕПЕСТКЕ</span>
+                    </div>
+                    <a href="catalog.html" class="btn" style="display:flex;align-items:center;justify-content:center;text-decoration:none;">ПЕРЕЙТИ В КАТАЛОГ</a>
+                 </div>
+             </div>
+        </section>
+
+        <section class="hits">
+            <h2 class="hits-title">ХИТЫ ПРОДАЖ</h2>
+            <div class="hits-filters">
+                <div class="filters-row">
+                    <button class="filter-btn active" style="width: 125px; height: 30px;">все позиции</button>
+                    <button class="filter-btn" style="width: 190px; height: 30px;">авторские букеты</button>
+                    <button class="filter-btn" style="width: 125px; height: 30px;">сухоцветы</button>
+                    <button class="filter-btn" style="width: 130px; height: 30px;">монобукеты</button>
+                    <button class="filter-btn" style="width: 173px; height: 30px;">цветы поштучно</button>
+                    <button class="filter-btn" style="width: 160px; height: 30px;">день рождения</button>
+                    <button class="filter-btn" style="width: 211px; height: 30px;">комнатные растения</button>
+                </div>
+                <div class="filters-row">
+                    <button class="filter-btn" style="width: 123px; height: 30px;">на 8 марта</button>
+                    <button class="filter-btn" style="width: 190px; height: 30px;">съедобные букеты</button>
+                    <button class="filter-btn" style="width: 123px; height: 30px;">акции</button>
+                    <button class="filter-btn" style="width: 130px; height: 30px;">день матери</button>
+                    <button class="filter-btn" style="width: 173px; height: 30px;">день влюбленных</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="main/image/3.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Аристократ</h3>
+                            <img src="main/image/7.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">6 000 ₽</div>
+                        <button class="product-button-cart">добавить в корзину</button>
+                        <a href="cartochka.html" class="product-button-details">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="main/image/4.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Дыхание весны</h3>
+                            <img src="main/image/7.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">3 500 ₽</div>
+                        <button class="product-button-cart">добавить в корзину</button>
+                        <a href="cartochka.html" class="product-button-details">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="main/image/5.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Утренний рассвет</h3>
+                            <img src="main/image/7.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">4 100 ₽</div>
+                        <button class="product-button-cart">добавить в корзину</button>
+                        <a href="cartochka.html" class="product-button-details">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="main/image/6.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Лепестковый сон</h3>
+                            <img src="main/image/7.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">4 800 ₽</div>
+                        <button class="product-button-cart">добавить в корзину</button>
+                        <a href="cartochka.html" class="product-button-details">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="main/image/8.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Симфония</h3>
+                            <img src="main/image/7.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">6 000 ₽</div>
+                        <button class="product-button-cart">добавить в корзину</button>
+                        <a href="cartochka.html" class="product-button-details">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="main/image/9.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Нежность роз</h3>
+                            <img src="main/image/7.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">6 000 ₽</div>
+                        <button class="product-button-cart">добавить в корзину</button>
+                        <a href="cartochka.html" class="product-button-details">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="main/image/10.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Розовая элегия</h3>
+                            <img src="main/image/7.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">5 000 ₽</div>
+                        <button class="product-button-cart">добавить в корзину</button>
+                        <a href="cartochka.html" class="product-button-details">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="main/image/11.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Уютная нежность</h3>
+                            <img src="main/image/7.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">6 000 ₽</div>
+                        <button class="product-button-cart">добавить в корзину</button>
+                        <a href="cartochka.html" class="product-button-details">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-more-wrapper">
+                <a href="#" class="view-more-btn">Смотреть ещё</a>
+            </div>
+        </section>
+
+        <section class="additional-section">
+            <h2 class="additional-title">ДОПОЛНИТЕЛЬНО К БУКЕТУ</h2>
+            
+            <div class="additional-row">
+                <div class="additional-item">
+                    <h3 class="additional-item-title">ПЕРСОНАЛЬНАЯ ОТКРЫТКА</h3>
+                </div>
+                <div class="additional-description">
+                    <p>Мы напечатаем вашу подпись<br>или послание на стильной открытке</p>
+                </div>
+                <div class="additional-price">800 ₽</div>
+            </div>
+            <div class="additional-line"></div>
+            
+            <div class="additional-row">
+                <div class="additional-item">
+                    <h3 class="additional-item-title">СЛАДКИЙ ПОДАРОК</h3>
+                </div>
+                <div class="additional-description">
+                    <p>Добавим к букету конфеты<br>шоколад или десерт на выбор</p>
+                </div>
+                <div class="additional-price">1500 ₽</div>
+            </div>
+            <div class="additional-line"></div>
+            
+            <div class="additional-row">
+                <div class="additional-item">
+                    <h3 class="additional-item-title">АРОМАТИЗАЦИЯ БУКЕТА</h3>
+                </div>
+                <div class="additional-description">
+                    <p>Лёгкий цветочный аромат сохраняется <br>дольше благодаря специальному спрею</p>
+                </div>
+                <div class="additional-price">500 ₽</div>
+            </div>
+            <div class="additional-line"></div>
+            
+            <div class="additional-row">
+                <div class="additional-item">
+                    <h3 class="additional-item-title">АНОНИМНАЯ ДОСТАВКА</h3>
+                </div>
+                <div class="additional-description">
+                    <p>Получатель не узнает, от кого<br>подарок - если вы захотите</p>
+                </div>
+                <div class="additional-price">500 ₽</div>
+            </div>
+            <div class="additional-line"></div>
+            
+            <div class="additional-row">
+                <div class="additional-item">
+                    <h3 class="additional-item-title">СРОЧНАЯ ДОСТАВКА</h3>
+                </div>
+                <div class="additional-description">
+                    <p>Доставим букет в течение 2<br>часов после оформления заказа</p>
+                </div>
+                <div class="additional-price">1000 ₽</div>
+            </div>
+            <div class="additional-line"></div>
+        </section>
+
+        <section class="special-moments-section">
+            <div style="height: 40px;"></div>
+            <h2 class="special-moments-title">БУКЕТЫ ДЛЯ ОСОБЕННЫХ МОМЕНТОВ</h2>
+            
+            <div class="moments-grid">
+                <button class="moment-card">
+                    <img src="main/image/12.png" alt="День рождения" class="moment-image">
+                    <div class="moment-overlay">ДЕНЬ<br>РОЖДЕНИЯ</div>
+                </button>
+                <button class="moment-card">
+                    <img src="main/image/13.png" alt="День влюбленных" class="moment-image">
+                    <div class="moment-overlay">ДЕНЬ<br>ВЛЮБЛЕННЫХ</div>
+                </button>
+                <button class="moment-card">
+                    <img src="main/image/14.png" alt="8 марта" class="moment-image">
+                    <div class="moment-overlay">8 МАРТА</div>
+                </button>
+                <button class="moment-card">
+                    <img src="main/image/15.png" alt="День матери" class="moment-image">
+                    <div class="moment-overlay">ДЕНЬ<br>МАТЕРИ</div>
+                </button>
+            </div>
+            
+            <div class="moments-cart-button-wrapper">
+                <button class="moments-cart-btn">перейти в каталог</button>
+            </div>
+        </section>
+
+        <section class="daily-bouquet-section">
+            <div class="daily-bouquet-container">
+                <div class="daily-bouquet-left">
+                    <img src="main/image/20.png" alt="Букет дня" class="daily-bouquet-main-image">
+                </div>
+                <div class="daily-bouquet-right">
+                    <h2 class="daily-bouquet-title">БУКЕТ ДНЯ</h2>
+                    <p class="daily-bouquet-description">
+                        Букет дня — это свежая композиция из лучших цветов, которые есть в наличии сегодня. Флористы сами подбирают гармоничное сочетание, поэтому каждый день букет может немного отличаться.
+                    </p>
+                    <div class="daily-bouquet-quote">КАЖДЫЙ ДЕНЬ НОВЫЙ БУКЕТ!</div>
+                    <button class="daily-bouquet-btn">Купить со скидкой</button>
+                </div>
+            </div>
+            <div class="daily-bouquet-gallery">
+                <img src="main/image/16.png" alt="Букет 1" class="gallery-image">
+                <img src="main/image/17.png" alt="Букет 2" class="gallery-image">
+                <img src="main/image/18.png" alt="Букет 3" class="gallery-image">
+                <img src="main/image/19.png" alt="Букет 4" class="gallery-image">
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div style="height: 100px;"></div>
+            <h2 class="faq-title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question-wrapper">
+                    <div class="faq-question">КАК ОФОРМЛЯЕТСЯ ЗАКАЗ НА ЦВЕТЫ?</div>
+                    <button class="faq-toggle">
+                        <img src="main/image/21.svg" alt="toggle">
+                    </button>
+                </div>
+                <div class="faq-line"></div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question-wrapper">
+                    <div class="faq-question">КАК ПРОИЗВОДИТСЯ ОПЛАТА ЦВЕТОВ?</div>
+                    <button class="faq-toggle">
+                        <img src="main/image/21.svg" alt="toggle">
+                    </button>
+                </div>
+                <div class="faq-line"></div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question-wrapper">
+                    <div class="faq-question">МОЖНО ЛИ СОБРАТЬ БУКЕТ ПО МОЕМУ ЗАКАЗУ?</div>
+                    <button class="faq-toggle">
+                        <img src="main/image/21.svg" alt="toggle">
+                    </button>
+                </div>
+                <div class="faq-line"></div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question-wrapper">
+                    <div class="faq-question">СООТВЕТСТВУЕТ ЛИ БУКЕТ ИЗОБРАЖЕНИЮ НА САЙТЕ?</div>
+                    <button class="faq-toggle">
+                        <img src="main/image/21.svg" alt="toggle">
+                    </button>
+                </div>
+                <div class="faq-line"></div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question-wrapper">
+                    <div class="faq-question">СКОЛЬКО СТОИТ ДОСТАВКА ЦВЕТОВ?</div>
+                    <button class="faq-toggle">
+                        <img src="main/image/21.svg" alt="toggle">
+                    </button>
+                </div>
+                <div class="faq-line"></div>
+            </div>
+        </section>
+
+        <div class="custom-bouquet-wrap">
+            <section class="custom-bouquet-section">
+                <div class="custom-bouquet-wrapper">
+                    <img src="main/image/22.png" alt="Букет" class="custom-bouquet-image">
+                    <div class="custom-bouquet-overlay">
+                        <div class="custom-bouquet-card"></div>
+                        <h2 class="custom-bouquet-title">СОБЕРЕМ БУКЕТ<br>ЛИЧНО ДЛЯ ВАС</h2>
+                        <div class="custom-bouquet-description">
+                            <p>Не нашли понравившейся букет?</p>
+                            <p>Опишите свои пожелания</p>
+                            <p>и мы соберём ваш первый букет бесплатно</p>
+                        </div>
+                        <button class="custom-bouquet-btn">Оставить заявку</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div style="height: 80px;"></div>
+        <section class="about-section">
+            <div class="about-container">
+                <div class="about-left">
+                    <img src="main/image/24.png" alt="О нас" class="about-image">
+                </div>
+                <div class="about-right-blocks">
+                    <div class="about-block about-block-title">
+                        <h2 class="about-title">О НАС</h2>
+                    </div>
+                    <div class="about-block about-block-text1">
+                        <p class="about-text">
+                            Мы собираем букеты из свежих цветов, следим за трендами во флористике и одновременно сохраняем классику, которая всегда актуальна. В нашем ассортименте — от лаконичных минималистичных композиций до выразительных авторских букетов для особых случаев.
+                        </p>
+                    </div>
+                    <div class="about-block about-block-subtitle">
+                        <h3 class="about-subtitle">НАША ЦЕЛЬ</h3>
+                    </div>
+                    <div class="about-block about-block-text2">
+                        <p class="about-text">
+                            Сделать так, чтобы каждый букет радовал и выглядел именно так, как вы задумали. Поэтому мы уделяем внимание качеству, аккуратности сборки и сервису, на который можно положиться.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div> 
+
+<div style="height: 80px;"></div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <button class="footer-contact-btn">Связаться с нами</button>
+            <p class="footer-subscribe-title">Подписаться на рассылку</p>
+            <div class="email-wrapper">
+                <input type="email" placeholder="Введите Email" class="footer-email-input">
+                <div class="footer-email-line"></div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-email-link">info@florasis.ru</p>
+            <p class="footer-phone">+7 (XXX) XXX-XXXX</p>
+            <p class="footer-address-line">Юр. адрес: г. Санкт-Петербург, ул.</p>
+            <p class="footer-address-line">Пушкинская, д. 10</p>
+        </div>
+    </div>
+</footer>
+
+
+    
+<script>
+    (function() {
+        const burger = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('menuOverlay');
+        const closeBtn = document.getElementById('closeBtn');
+        
+        if (!burger || !mobileMenu || !overlay) return;
+        
+        function closeMenu() {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('active');
+            burger.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        function openMenu() {
+            mobileMenu.classList.add('open');
+            overlay.classList.add('active');
+            burger.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        burger.addEventListener('click', function() {
+            if (mobileMenu.classList.contains('open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeMenu);
+        }
+
+        overlay.addEventListener('click', closeMenu);
+        
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                closeMenu();
+            });
+        });
+    })();
+</script>
+
+</body>
+</html>

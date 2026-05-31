@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main/style.css">
+    <link rel="stylesheet" type="text/css" href="adaptive.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <title>Оформление заказа</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-wrapper">
+                <a href="index.html"><img src="main/image/1.png" alt="Logo" class="logo-image"></a>
+            </div>
+
+            <nav class="navigation">
+                <ol>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                    <li><a href="index.html">О нас</a></li>
+                </ol>
+            </nav>
+
+            <button class="burger-btn" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-btn" id="closeBtn">✕</button>
+            <nav>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                    <li><a href="index.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <section class="checkout-section">
+            <h1 class="checkout-title">ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+            <div class="checkout-title-line"></div>
+
+            <div class="checkout-layout">
+                <div class="checkout-form">
+                    <div class="checkout-block">
+                        <h2 class="checkout-subtitle">ИНФОРМАЦИЯ ПОЛЬЗОВАТЕЛЯ</h2>
+                        <input type="text" placeholder="Имя" class="checkout-input checkout-input-full">
+                        <div class="checkout-row">
+                            <input type="email" placeholder="Email" class="checkout-input">
+                            <input type="tel" placeholder="Номер телефона" class="checkout-input">
+                        </div>
+                    </div>
+
+                    <div class="checkout-block">
+                        <h2 class="checkout-subtitle">СПОСОБ ДОСТАВКИ</h2>
+                        <div class="checkout-radio-group">
+                            <label class="checkout-radio-label">
+                                <input type="radio" name="delivery" value="pickup" checked class="checkout-radio">
+                                <span class="checkout-radio-text">Самовывоз из магазина</span>
+                            </label>
+                            <label class="checkout-radio-label">
+                                <input type="radio" name="delivery" value="address" class="checkout-radio">
+                                <span class="checkout-radio-text">Адрес получателя</span>
+                            </label>
+                        </div>
+                        <div class="checkout-row">
+                            <input type="text" placeholder="улица" class="checkout-input">
+                            <input type="text" placeholder="дом" class="checkout-input">
+                        </div>
+                    </div>
+
+                    <div class="checkout-block">
+                        <h2 class="checkout-subtitle">ВРЕМЯ ДОСТАВКИ / ПРИБЫТИЯ</h2>
+                        <div class="checkout-time-row">
+                            <input type="text" placeholder="00 : 00" class="checkout-input checkout-input-time">
+                            <span class="checkout-time-dash">—</span>
+                            <input type="text" placeholder="00 : 00" class="checkout-input checkout-input-time">
+                        </div>
+                    </div>
+
+                    <div class="checkout-block">
+                        <h2 class="checkout-subtitle">КОММЕНТАРИИ К ЗАКАЗУ</h2>
+                        <textarea placeholder="" class="checkout-textarea"></textarea>
+                    </div>
+                </div>
+
+                <div class="checkout-summary">
+                    <h2 class="checkout-summary-title">ДЕТАЛИ ЗАКАЗА</h2>
+
+                    <div class="checkout-order-item">
+                        <img src="cart/image/2.png" alt="Авторский букет Аристократ" class="checkout-order-image">
+                        <div class="checkout-order-info">
+                            <p class="checkout-order-type">Авторский букет</p>
+                            <p class="checkout-order-name">"АРИСТОКРАТ"</p>
+                        </div>
+                        <p class="checkout-order-price">6 000 ₽</p>
+                    </div>
+                    <div class="checkout-order-line"></div>
+
+                    <div class="checkout-order-item">
+                        <img src="cart/image/2.png" alt="Авторский букет Аристократ" class="checkout-order-image">
+                        <div class="checkout-order-info">
+                            <p class="checkout-order-type">Авторский букет</p>
+                            <p class="checkout-order-name">"АРИСТОКРАТ"</p>
+                        </div>
+                        <p class="checkout-order-price">6 000 ₽</p>
+                    </div>
+                    <div class="checkout-order-line"></div>
+
+                    <div class="checkout-total-row">
+                        <span class="checkout-total-label">К ОПЛАТЕ</span>
+                        <span class="checkout-total-price">12 000 ₽</span>
+                    </div>
+
+                    <button class="product-button-cart checkout-pay-btn">ПЕРЕЙТИ К ОПЛАТЕ</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+<div style="height: 80px;"></div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-left">
+            <button class="footer-contact-btn">Связаться с нами</button>
+            <p class="footer-subscribe-title">Подписаться на рассылку</p>
+            <div class="email-wrapper">
+                <input type="email" placeholder="Введите Email" class="footer-email-input">
+                <div class="footer-email-line"></div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-email-link">info@florasis.ru</p>
+            <p class="footer-phone">+7 (XXX) XXX-XXXX</p>
+            <p class="footer-address-line">Юр. адрес: г. Санкт-Петербург, ул.</p>
+            <p class="footer-address-line">Пушкинская, д. 10</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+(function() {
+    const burger = document.getElementById('burgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('menuOverlay');
+    const closeBtn = document.getElementById('closeBtn');
+
+    if (!burger || !mobileMenu || !overlay) return;
+
+    function closeMenu() {
+        mobileMenu.classList.remove('open');
+        overlay.classList.remove('active');
+        burger.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function openMenu() {
+        mobileMenu.classList.add('open');
+        overlay.classList.add('active');
+        burger.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    burger.addEventListener('click', function() {
+        if (mobileMenu.classList.contains('open')) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeMenu);
+    }
+
+    overlay.addEventListener('click', closeMenu);
+
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', closeMenu);
+    });
+})();
+</script>
+
+</body>
+</html>
