@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="catalog/style3.css">
+    <link rel="stylesheet" type="text/css" href="adaptive.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <title>Личный кабинет</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-wrapper">
+                <a href="index.html"><img src="main/image/1.png" alt="Logo" class="logo-image"></a>
+            </div>
+
+            <nav class="navigation">
+                <ol>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                    <li><a href="index.html">О нас</a></li>
+                </ol>
+            </nav>
+
+            <button class="burger-btn" id="burgerBtn" type="button" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-btn" id="closeBtn" type="button" aria-label="Закрыть">✕</button>
+            <nav>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                    <li><a href="index.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <main class="account-page">
+            <div class="account-profile">
+                <p class="account-name">Иванов Иван</p>
+                <div class="account-stats">
+                    <span class="account-stat">Бонусы — 370</span>
+                    <span class="account-stat-sep" aria-hidden="true">|</span>
+                    <span class="account-stat">Моя скидка — 5%</span>
+                </div>
+            </div>
+
+            <div class="account-loyalty">
+                <div class="account-loyalty-info">
+                    <p class="account-loyalty-title">Карта лояльности</p>
+                    <p class="account-loyalty-number">№202020202020</p>
+                </div>
+                <button type="button" class="account-scan-btn">Сканировать</button>
+            </div>
+
+            <nav class="account-menu" aria-label="Разделы личного кабинета">
+                <details class="account-menu-item">
+                    <summary class="account-menu-row">
+                        <span>Мои заказы</span>
+                        <img src="catalog/images/vector-56.png" alt="" class="account-menu-arrow">
+                    </summary>
+                    <div class="account-orders">
+                        <div class="account-order">
+                            <span class="account-order-title">Заказ №123 от 20.04.2026</span>
+                            <span class="account-order-status">Доставлен</span>
+                        </div>
+                        <div class="account-order">
+                            <span class="account-order-title">Заказ №128 от 18.04.2026</span>
+                            <span class="account-order-status">Доставлен</span>
+                        </div>
+                        <div class="account-order">
+                            <span class="account-order-title">Заказ №135 от 25.04.2026</span>
+                            <span class="account-order-status">Доставлен</span>
+                        </div>
+                        <div class="account-order">
+                            <span class="account-order-title">Заказ №142 от 28.04.2026</span>
+                            <span class="account-order-status account-order-status--active">В пути</span>
+                        </div>
+                    </div>
+                </details>
+
+                <a href="#" class="account-menu-row account-menu-link">
+                    <span>Подарочные карты</span>
+                    <img src="catalog/images/vector-56.png" alt="" class="account-menu-arrow">
+                </a>
+
+                <a href="#" class="account-menu-row account-menu-link">
+                    <span>Обратная связь</span>
+                    <img src="catalog/images/vector-56.png" alt="" class="account-menu-arrow">
+                </a>
+            </nav>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <button type="button" class="footer-contact-btn">Связаться с нами</button>
+                <p class="footer-subscribe-title">Подписаться на рассылку</p>
+                <div class="email-wrapper">
+                    <input type="email" placeholder="Введите Email" class="footer-email-input">
+                    <div class="footer-email-line"></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-email-link">info@florasis.ru</p>
+                <p class="footer-phone">+7 (XXX) XXX-XXXX</p>
+                <p class="footer-address-line">Юр. адрес: г. Санкт-Петербург, ул.</p>
+                <p class="footer-address-line">Пушкинская, д. 10</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    (function() {
+        const burger = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('menuOverlay');
+        const closeBtn = document.getElementById('closeBtn');
+
+        if (!burger || !mobileMenu || !overlay) return;
+
+        function closeMenu() {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('active');
+            burger.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function openMenu() {
+            mobileMenu.classList.add('open');
+            overlay.classList.add('active');
+            burger.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        burger.addEventListener('click', function() {
+            if (mobileMenu.classList.contains('open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeMenu);
+        }
+
+        overlay.addEventListener('click', closeMenu);
+
+        mobileMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', closeMenu);
+        });
+    })();
+    </script>
+</body>
+</html>

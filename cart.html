@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="cart/style.css">
+    <link rel="stylesheet" type="text/css" href="adaptive.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <title>Корзина</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-wrapper">
+                <a href="index.html"><img src="main/image/1.png" alt="Logo" class="logo-image"></a>
+            </div>
+
+            <nav class="navigation">
+                <ol>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                    <li><a href="index.html">О нас</a></li>
+                </ol>
+            </nav>
+
+            <button class="burger-btn" id="burgerBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <button class="close-btn" id="closeBtn">✕</button>
+            <nav>
+                <ul>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a href="cart.html">Корзина</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="account.html">Личный кабинет</a></li>
+                    <li><a href="index.html">О нас</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <section class="cart-section">
+            <div class="cart-header">
+                <h1 class="cart-title">Корзина</h1>
+                <span class="cart-count">4</span>
+            </div>
+            <div class="cart-line"></div>
+        </section>
+
+        <section class="products-section">
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="cart/image/2.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Аристократ</h3>
+                            <img src="cart/image/6.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">6000 ₽</div>
+                        <a href="cartochka.html" class="product-button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="cart/image/3.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Дыхание весны</h3>
+                            <img src="cart/image/6.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">3500 ₽</div>
+                        <a href="cartochka.html" class="product-button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="cart/image/4.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Утренний рассвет</h3>
+                            <img src="cart/image/6.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">4100 ₽</div>
+                        <a href="cartochka.html" class="product-button">Подробнее</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="cart/image/5.png" alt="Product" class="product-image">
+                    <div class="product-content">
+                        <div class="product-header">
+                            <h3 class="product-title">Лепестковый сон</h3>
+                            <img src="cart/image/6.svg" alt="Избранное" class="product-like">
+                        </div>
+                        <div class="product-price">4800 ₽</div>
+                        <a href="cartochka.html" class="product-button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: flex-end; margin-top: 40px;">
+                <a href="checkout.html" class="checkout-button">К оформлению</a>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <button class="footer-contact-btn">Связаться с нами</button>
+            <p class="footer-subscribe-title">Подписаться на рассылку</p>
+            <input type="email" placeholder="Введите Email" class="footer-email-input">
+            <div class="footer-line"></div>
+        </div>
+
+        <div class="footer-section footer-right">
+            <p class="footer-email-link">info@florasis.ru</p>
+            <p class="footer-phone">+7 (XXX) XXX-XXXX</p>
+            <p class="footer-address-line">Юр. адрес: г. Санкт-Петербург, ул.</p>
+            <p class="footer-address-line">Пушкинская, д. 10</p>
+        </div>
+    </div>
+</footer>
+
+    <script>
+    (function() {
+        const burger = document.getElementById('burgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('menuOverlay');
+        const closeBtn = document.getElementById('closeBtn');
+        
+        if (!burger || !mobileMenu || !overlay) return;
+        
+        function closeMenu() {
+            mobileMenu.classList.remove('open');
+            overlay.classList.remove('active');
+            burger.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        function openMenu() {
+            mobileMenu.classList.add('open');
+            overlay.classList.add('active');
+            burger.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        burger.addEventListener('click', function() {
+            if (mobileMenu.classList.contains('open')) {
+                closeMenu();
+            } else {
+                openMenu();
+            }
+        });
+        
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeMenu);
+        }
+
+        overlay.addEventListener('click', closeMenu);
+        
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                closeMenu();
+            });
+        });
+    })();
+    </script>
+</body>
+</html>
