@@ -1,0 +1,1259 @@
+.inter-<uniquifier> {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.cormorant-<uniquifier> {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", "Cormorant";
+  font-size: 18px;
+}
+.container {
+  width: 100%;
+  margin: 0;
+  padding-left: 70px;
+  padding-right: 70px;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+h1{
+  font-family:"Cormorant";
+  font-size: 70px;
+  text-transform: uppercase
+}
+h2{
+  font-family:"Inter";
+  font-size: 45px;
+}
+
+СЕКЦИЯ ФЛОРАЗИС
+
+.hero-logo {
+    width: 50px;
+    height: 49px;
+    margin-right: 21px;
+}
+.hero-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 47px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+.hero {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: transparent;
+    padding: 60px 0;
+}
+.hero-image-wrapper {
+    position: relative;
+    width: calc(100% - 140px);
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 54px;
+    overflow: hidden;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1296 / 590;
+    object-fit: cover;
+    display: block;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 54px;
+}
+.hero-subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 30px;
+}
+.hero-subtitle span {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+}
+.btn {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #000000;
+    width: 445px;
+    height: 55px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 50px;
+    }
+    .hero-image-wrapper {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: calc(100% - 40px);
+    }
+    .hero-subtitle span {
+        font-size: 24px;
+    }
+    .hero-subtitle {
+        gap: 10px;
+    }
+    .btn {
+        width: 280px;
+        height: 50px;
+        font-size: 14px;
+    }
+}
+.hero .hero-logo {
+    width: 50px;
+    height: 49px;
+    margin-right: 21px;
+    display: block;
+}
+
+ХИТЫ ПРОДАЖ И КАТЕГОРИИ
+
+.hits {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 60px 0 0 0;
+    background-color: #ffffff;
+}
+.hits-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: #000000;
+    margin: 0 0 65px 70px;
+    letter-spacing: -0.01em;
+}
+.hits-filters {
+    margin-left: 70px;
+}
+.filters-row:first-child {
+    display: flex;
+    gap: 45px;
+    margin-bottom: 15px;
+}
+.filters-row:last-child {
+    display: flex;    gap: 46px;
+    margin-bottom: 81px;
+}
+.filter-btn {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333333;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.filter-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.filter-btn.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+@media (max-width: 1400px) {
+    .filters-row:first-child,
+    .filters-row:last-child {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 1200px) {
+    .hits-title {
+        margin-left: 40px;
+        font-size: 38px;
+        margin-bottom: 50px;
+    }
+    .hits-filters {
+        margin-left: 40px;
+    }
+    .filters-row:first-child {
+        gap: 30px;
+    }
+    .filters-row:last-child {
+        gap: 30px;
+    }
+    .filter-btn {
+        font-size: 16px;
+    }
+}
+@media (max-width: 768px) {
+    .hits-title {
+        font-size: 32px;
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+    .hits-filters {
+        margin-left: 20px;
+    }
+    .filters-row:first-child,
+    .filters-row:last-child {
+        gap: 16px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+    .filter-btn {
+        font-size: 14px;
+    }
+}
+.hits {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+.hits-title {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+.hits-filters {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+.container {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.products-section {
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+
+ТОВАРЫ
+
+.products-section {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.products-grid {
+    display: flex;
+    justify-content: flex-start;
+    gap: 46px;
+}
+.product-card {
+    width: 309px;
+    background: #fff;
+    border: none;
+    margin-bottom: -55px;
+}
+.product-image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 309 / 375;
+    object-fit: cover;
+    display: block;
+}
+.product-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 8px 0 15px 0;
+    width: 100%;
+}
+.product-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 27px;
+    color: black;
+    text-transform: none;
+    margin: 0;
+}
+.product-like {
+    width: 28px;
+    height: 30px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+.product-price {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 27px;
+    color: #000;
+    margin-bottom: 22px;
+    text-align: left;
+}
+.product-button-cart {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    width: 309px;
+    height: 50px;
+    border: none;
+    border-radius: 13px;
+    transition: all 0.3s;
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+.product-button-cart:hover {
+    background-color: #333333;
+}
+.product-button-details {
+    display: block;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    width: 309px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 13px;
+    transition: all 0.3s;
+    text-align: center;
+    line-height: 48px;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+.product-button-details:hover {
+    background-color: black;
+    color: white;
+}
+.view-more-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 106px;
+    margin-bottom: 30px;
+}
+.additional-section {
+    margin-top: -25px;
+}
+.view-more-btn {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    width: 199px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 13px;
+    transition: all 0.3s;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    display: inline-block;
+}
+.view-more-btn:hover {
+    background-color: black;
+    color: white;
+}
+
+ДОПОЛНИТЕЛЬНО К БУКЕТУ
+
+.additional-section {
+    margin-top: 61px;
+    margin-bottom: 0;
+}
+.additional-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 0 50px 0;
+}
+.additional-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.additional-item-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    white-space: nowrap;
+    width: 625px;
+}
+.additional-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    margin: 0;
+    text-align: left;
+    line-height: 1.4;
+    width: 350px;
+    margin-right: 200px;
+}
+.additional-price {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: black;
+    margin: 0;
+    white-space: nowrap;
+    width: 100px;
+}
+.additional-line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+БУКЕТЫ ДЛЯ ОСОБЕННЫХ МОМЕНТОВ
+
+.special-moments-section {
+    margin-top: 81px; 
+    margin-bottom: 50px;
+    padding-top: 1px;
+}
+.special-moments-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 93px;
+}
+.moments-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 90px;
+    margin-top: 50px;
+}
+.moment-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    background: none;
+}
+.moment-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.moment-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    background-color: transparent;
+    padding: 10px;
+    white-space: normal;
+    width: 100%;
+}
+.moment-card:hover {
+    opacity: 0.8;
+}
+.moments-cart-button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.moments-cart-btn {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    width: 309px;
+    height: 50px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.moments-cart-btn:hover {
+    background-color: #333333;
+}
+
+БУКЕТ ДНЯ
+
+.daily-bouquet-section {
+    margin-top: 60px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.daily-bouquet-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+.daily-bouquet-left {
+    flex-shrink: 0;
+    position: relative;
+    left: -70px;
+}
+.daily-bouquet-section {
+    padding-left: 70px;
+}
+.daily-bouquet-main-image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+.daily-bouquet-right {
+    flex: 0;
+    width: 600px;
+}
+.daily-bouquet-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    text-align: left;
+}
+.daily-bouquet-description {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    line-height: 1.4;
+    width: 531px;
+    margin: 0 0 69px 0;
+    text-align: justify;
+    text-align-last: left;
+}
+.daily-bouquet-quote {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 19px;
+    text-align: left;
+}
+.daily-bouquet-btn {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    width: 309px;
+    height: 50px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    display: block;
+}
+.daily-bouquet-btn:hover {
+    background-color: #333333;
+}
+.daily-bouquet-gallery {
+    display: flex;
+    justify-content: flex-start;
+    gap: 39px;
+    margin-top: -100px;
+    margin-left: 530px;
+}
+.gallery-image {
+    width: 103.61px;
+    height: 103.61px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+
+.faq-section {
+    padding-top: 150px;
+    margin-bottom: 60px;
+    padding: 0 70px;
+}
+.faq-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: left;
+}
+.faq-item {
+    margin-bottom: 20px;
+}
+.faq-question-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-right: 175px;
+}
+.faq-question {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    margin: 0;
+}
+.faq-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.faq-toggle img {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.faq-toggle:hover img {
+    opacity: 0.6;
+}
+.faq-line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+СОБЕРЁМ БУКЕТ ЛИЧНО ДЛЯ ВАС
+
+.custom-bouquet-section {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    margin-top: 150px !important;
+    padding: 60px 0;
+}
+.custom-bouquet-wrapper {
+    position: relative;
+    width: calc(100% - 140px);
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 0;
+    overflow: visible;
+}
+.custom-bouquet-image {
+    width: 112%;
+    margin-left: -6%;
+    display: block;
+    border-radius: 30px;
+}
+.custom-bouquet-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 30px;
+    text-align: center;
+}
+.custom-bouquet-card {
+    position: absolute;
+    width: 464px;
+    height: 337px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 46px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+.custom-bouquet-title {
+    font-family: "Cormorant", serif;
+    font-weight: 700;
+    font-size: 38px;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    position: relative;
+    z-index: 1;
+    margin-top: -5px;
+}
+.custom-bouquet-description {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+.custom-bouquet-description p {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: black;
+    margin: 0 0 10px 0;
+    line-height: 0.5;
+}
+.custom-bouquet-btn {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    width: 309px;
+    height: 50px;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.custom-bouquet-btn:hover {
+    background-color: #333333;
+}
+.custom-bouquet-wrap {
+    margin-top: 71px;
+}
+
+О НАС
+
+.about-section {
+    margin: 0;
+    padding: 0 70px;
+}
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+}
+.about-left {
+    flex-shrink: 0;
+}
+.about-image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+}
+.about-right-blocks {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.about-block-title {
+    margin-bottom: 50px;
+}
+.about-block-text1 {
+    margin-bottom: 71px;
+}
+.about-block-subtitle {
+    margin-bottom: 30px;
+}
+.about-block-text2 {
+    margin-bottom: 0px;
+}
+.about-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+}
+.about-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+    width: 510px;
+    text-align: justify;
+    text-align-last: left;
+    margin: 0;
+}
+.about-subtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    margin: 0;
+}
+
+ПОДВАЛ
+
+.footer {
+    background-color: black;
+    width: 100%;
+    margin: 60px auto 0 auto;
+    padding: 0;
+    height: 400px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    gap: 40px;
+    height: 100%;
+    padding: 50px 0;
+}
+.footer-left {
+    flex-shrink: 0;
+    width: auto;
+}
+.email-wrapper {
+    width: 100%;
+    min-width: 200px;
+}
+.footer-contact-btn {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    padding: 15px 35px;
+    border-radius: 11px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+.footer-contact-btn:hover {
+    background: white;
+    color: black;
+}
+.footer-subscribe-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 12px;
+    white-space: nowrap;
+}
+.footer-email-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 8px 0;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+.footer-email-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255,255,255,0.5);
+}
+.footer-email-input::placeholder {
+    color: #888;
+}
+.footer-right {
+    text-align: right;
+}
+.footer-email-link {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 12px;
+}
+.footer-phone {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+}
+.footer-address-line {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+.footer {
+    background-color: rgb(0, 0, 0) !important;
+}
+
+ОФОРМЛЕНИЕ ЗАКАЗА
+
+.checkout-section {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+.checkout-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+    letter-spacing: -0.01em;
+}
+
+.checkout-title-line {
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    border: none;
+    outline: none;
+    margin-bottom: 50px;
+}
+
+.checkout-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.checkout-form {
+    flex: 1;
+    max-width: 780px;
+}
+
+.checkout-block {
+    margin-bottom: 40px;
+}
+
+.checkout-subtitle {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+
+.checkout-input {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+.checkout-input::placeholder {
+    color: #888;
+}
+
+.checkout-input-full {
+    display: block;
+}
+
+.checkout-row {
+    display: flex;
+    gap: 20px;
+}
+
+.checkout-row .checkout-input {
+    flex: 1;
+}
+
+.checkout-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.checkout-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.checkout-radio {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.checkout-radio:checked {
+    background-color: #000000;
+    box-shadow: inset 0 0 0 3px white;
+}
+
+.checkout-radio-text {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+}
+
+.checkout-time-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkout-input-time {
+    width: 120px;
+    flex-shrink: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.checkout-time-dash {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+}
+
+.checkout-textarea {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    outline: none;
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.checkout-summary {
+    flex-shrink: 0;
+    width: 380px;
+    background-color: #ededed;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-sizing: border-box;
+}
+
+.checkout-summary-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 0 25px 0;
+}
+
+.checkout-order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.checkout-order-image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    flex-shrink: 0;
+    display: block;
+}
+
+.checkout-order-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.checkout-order-type {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: black;
+    margin: 0 0 4px 0;
+}
+
+.checkout-order-name {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    margin: 0;
+}
+
+.checkout-order-price {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+    margin: 0;
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+.checkout-order-line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    outline: none;
+    margin: 5px 0;
+}
+
+.checkout-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 20px 0;
+}
+
+.checkout-total-label {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+}
+
+.checkout-total-price {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: black;
+}
+
+.checkout-pay-btn {
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 1200px) {
+    .checkout-layout {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .checkout-form {
+        max-width: 100%;
+    }
+
+    .checkout-summary {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout-title {
+        font-size: 32px;
+    }
+
+    .checkout-subtitle {
+        font-size: 20px;
+    }
+
+    .checkout-row {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .checkout-input-time {
+        width: 100%;
+    }
+
+    .checkout-time-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .checkout-time-dash {
+        display: none;
+    }
+}
